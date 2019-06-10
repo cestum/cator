@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31C7D70489A364438E9B45CD /* libPods-Cator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FFB9FB9D2B2092D09467DE /* libPods-Cator.a */; };
+		4829860221C6BFCA0058F246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829860121C6BFCA0058F246 /* AppDelegate.swift */; };
+		4829860421C6BFCA0058F246 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829860321C6BFCA0058F246 /* ViewController.swift */; };
+		4829860921C6BFCB0058F246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4829860821C6BFCB0058F246 /* Assets.xcassets */; };
+		4829860C21C6BFCB0058F246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4829860A21C6BFCB0058F246 /* LaunchScreen.storyboard */; };
+		48CAD73F21C6C14900F10C87 /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD73E21C6C14900F10C87 /* FileProviderExtension.swift */; };
+		48CAD74121C6C14900F10C87 /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD74021C6C14900F10C87 /* FileProviderItem.swift */; };
+		48CAD74321C6C14900F10C87 /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD74221C6C14900F10C87 /* FileProviderEnumerator.swift */; };
+		48CAD74821C6C14900F10C87 /* Provider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48CAD73C21C6C14900F10C87 /* Provider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48CAD74F21C6F8D300F10C87 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD74E21C6F8D300F10C87 /* String+Additions.swift */; };
+		48CAD75021C6F8D300F10C87 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD74E21C6F8D300F10C87 /* String+Additions.swift */; };
+		48CAD75821C6FB6800F10C87 /* Dictionary+QueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD75721C6FB6800F10C87 /* Dictionary+QueryParams.swift */; };
+		48CAD75921C6FB6800F10C87 /* Dictionary+QueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD75721C6FB6800F10C87 /* Dictionary+QueryParams.swift */; };
+		48CAD75D21C6FC2400F10C87 /* CatorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD75C21C6FC2400F10C87 /* CatorWrapper.swift */; };
+		48CAD75E21C6FC2400F10C87 /* CatorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAD75C21C6FC2400F10C87 /* CatorWrapper.swift */; };
+		C9E387224E4DF7E9F7417673 /* libPods-Provider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3DDE816526D3DDA9009E85 /* libPods-Provider.a */; };
+		E910122122A82762006689DB /* FileProviderEnumeratorUpdator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB891422A80D0500A8E416 /* FileProviderEnumeratorUpdator.swift */; };
+		E910122422A835A8006689DB /* DirectoryIDCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910122322A835A8006689DB /* DirectoryIDCache.swift */; };
+		E910122522A83755006689DB /* DirectoryIDCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910122322A835A8006689DB /* DirectoryIDCache.swift */; };
+		E910122722A85711006689DB /* FileManager+Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910122622A85711006689DB /* FileManager+Support.swift */; };
+		E910122822A85765006689DB /* FileManager+Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910122622A85711006689DB /* FileManager+Support.swift */; };
+		E98E8E9222AE00450054BDB5 /* CatorUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E98E8E9122AE00450054BDB5 /* CatorUtility.m */; };
+		E98E8E9422AE01530054BDB5 /* CatorUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E98E8E9122AE00450054BDB5 /* CatorUtility.m */; };
+		E98E8E9522AE01530054BDB5 /* CatorUtility.h in Sources */ = {isa = PBXBuildFile; fileRef = E98E8E9322AE005F0054BDB5 /* CatorUtility.h */; };
+		E9BB890D22A6146F00A8E416 /* CatorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB890C22A6146F00A8E416 /* CatorClient.swift */; };
+		E9BB890E22A6146F00A8E416 /* CatorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB890C22A6146F00A8E416 /* CatorClient.swift */; };
+		E9BB891222A6DA1F00A8E416 /* CiphertextFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB891122A6DA1F00A8E416 /* CiphertextFileType.swift */; };
+		E9BB891322A6DA1F00A8E416 /* CiphertextFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB891122A6DA1F00A8E416 /* CiphertextFileType.swift */; };
+		E9BB891522A80D0500A8E416 /* FileProviderEnumeratorUpdator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB891422A80D0500A8E416 /* FileProviderEnumeratorUpdator.swift */; };
+		E9C1283222AEC95E00DA07A3 /* CatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1283122AEC95E00DA07A3 /* CatorError.swift */; };
+		E9C1283322AECA8500DA07A3 /* CatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C1283122AEC95E00DA07A3 /* CatorError.swift */; };
+		F4CAEEA321C7458A009E677B /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CAEEA221C7458A009E677B /* FileInfo.swift */; };
+		F4CAEEA421C7458A009E677B /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CAEEA221C7458A009E677B /* FileInfo.swift */; };
+		F4D3CB6B21CF07B2001582F2 /* FileProviderExtension+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3CB6A21CF07B2001582F2 /* FileProviderExtension+Actions.swift */; };
+		F4D3CB6D21CF2EDC001582F2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D3CB6C21CF2EDB001582F2 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48CAD74621C6C14900F10C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 482985F621C6BFCA0058F246 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CAD73B21C6C14900F10C87;
+			remoteInfo = Provider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48CAD74C21C6C14900F10C87 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				48CAD74821C6C14900F10C87 /* Provider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13721E34163ECCA284540AD9 /* Pods-Cator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cator/Pods-Cator.debug.xcconfig"; sourceTree = "<group>"; };
+		237B58B97F565FE61DD085CA /* Pods-Provider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Provider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Provider/Pods-Provider.debug.xcconfig"; sourceTree = "<group>"; };
+		2388ABEA6131503526EA7CAA /* Pods-Provider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Provider.release.xcconfig"; path = "Pods/Target Support Files/Pods-Provider/Pods-Provider.release.xcconfig"; sourceTree = "<group>"; };
+		482985FE21C6BFCA0058F246 /* Cator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4829860121C6BFCA0058F246 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
+		4829860321C6BFCA0058F246 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4829860821C6BFCB0058F246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4829860B21C6BFCB0058F246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4829860D21C6BFCB0058F246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CAD73C21C6C14900F10C87 /* Provider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Provider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CAD73E21C6C14900F10C87 /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderExtension.swift; sourceTree = "<group>"; };
+		48CAD74021C6C14900F10C87 /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		48CAD74221C6C14900F10C87 /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		48CAD74421C6C14900F10C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CAD74521C6C14900F10C87 /* Provider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Provider.entitlements; sourceTree = "<group>"; };
+		48CAD74E21C6F8D300F10C87 /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
+		48CAD75721C6FB6800F10C87 /* Dictionary+QueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+QueryParams.swift"; sourceTree = "<group>"; };
+		48CAD75C21C6FC2400F10C87 /* CatorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatorWrapper.swift; sourceTree = "<group>"; };
+		B8FFB9FB9D2B2092D09467DE /* libPods-Cator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3DDE816526D3DDA9009E85 /* libPods-Provider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Provider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E910122322A835A8006689DB /* DirectoryIDCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryIDCache.swift; sourceTree = "<group>"; };
+		E910122622A85711006689DB /* FileManager+Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Support.swift"; sourceTree = "<group>"; };
+		E98E8E9122AE00450054BDB5 /* CatorUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatorUtility.m; sourceTree = "<group>"; };
+		E98E8E9322AE005F0054BDB5 /* CatorUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatorUtility.h; sourceTree = "<group>"; };
+		E9BB890C22A6146F00A8E416 /* CatorClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatorClient.swift; sourceTree = "<group>"; };
+		E9BB891022A6153100A8E416 /* Cator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cator-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9BB891122A6DA1F00A8E416 /* CiphertextFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiphertextFileType.swift; sourceTree = "<group>"; };
+		E9BB891422A80D0500A8E416 /* FileProviderEnumeratorUpdator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumeratorUpdator.swift; sourceTree = "<group>"; };
+		E9C1283122AEC95E00DA07A3 /* CatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatorError.swift; sourceTree = "<group>"; };
+		F4A2133421E6C66500275D02 /* Cator.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Cator.xcconfig; sourceTree = "<group>"; };
+		F4CAEEA221C7458A009E677B /* FileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
+		F4D3CB6A21CF07B2001582F2 /* FileProviderExtension+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileProviderExtension+Actions.swift"; sourceTree = "<group>"; };
+		F4D3CB6C21CF2EDB001582F2 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		FA52A5199D54ACE25D0B241A /* Pods-Cator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cator/Pods-Cator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		482985FB21C6BFCA0058F246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C7D70489A364438E9B45CD /* libPods-Cator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CAD73921C6C14900F10C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E387224E4DF7E9F7417673 /* libPods-Provider.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DA5DB3C32885DEFFF18827E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8FFB9FB9D2B2092D09467DE /* libPods-Cator.a */,
+				DE3DDE816526D3DDA9009E85 /* libPods-Provider.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		482985F521C6BFCA0058F246 = {
+			isa = PBXGroup;
+			children = (
+				E98E8E8D22ADFDBC0054BDB5 /* Libraries */,
+				E9BB88E322A5AAEC00A8E416 /* Resources */,
+				F4A2133321E6C63500275D02 /* Configuration */,
+				4829860021C6BFCA0058F246 /* Cator */,
+				48CAD74D21C6F8B700F10C87 /* Shared */,
+				48CAD73D21C6C14900F10C87 /* Provider */,
+				482985FF21C6BFCA0058F246 /* Products */,
+				820F18AC7BD141AF65B31B46 /* Pods */,
+				3DA5DB3C32885DEFFF18827E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		482985FF21C6BFCA0058F246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				482985FE21C6BFCA0058F246 /* Cator.app */,
+				48CAD73C21C6C14900F10C87 /* Provider.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4829860021C6BFCA0058F246 /* Cator */ = {
+			isa = PBXGroup;
+			children = (
+				4829860121C6BFCA0058F246 /* AppDelegate.swift */,
+				4829860321C6BFCA0058F246 /* ViewController.swift */,
+				F4D3CB6C21CF2EDB001582F2 /* ViewController.xib */,
+				48CAD73721C6C08000F10C87 /* Supporting Files */,
+			);
+			path = Cator;
+			sourceTree = "<group>";
+		};
+		48CAD73721C6C08000F10C87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4829860D21C6BFCB0058F246 /* Info.plist */,
+				4829860821C6BFCB0058F246 /* Assets.xcassets */,
+				4829860A21C6BFCB0058F246 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48CAD73D21C6C14900F10C87 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				48CAD73E21C6C14900F10C87 /* FileProviderExtension.swift */,
+				F4D3CB6A21CF07B2001582F2 /* FileProviderExtension+Actions.swift */,
+				48CAD74021C6C14900F10C87 /* FileProviderItem.swift */,
+				48CAD74221C6C14900F10C87 /* FileProviderEnumerator.swift */,
+				48CAD74421C6C14900F10C87 /* Info.plist */,
+				48CAD74521C6C14900F10C87 /* Provider.entitlements */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		48CAD74D21C6F8B700F10C87 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1283022AEC94600DA07A3 /* Errors */,
+				E910122222A83597006689DB /* Cache */,
+				E9BB890F22A6150C00A8E416 /* CyptomatorBridge */,
+				48CAD75C21C6FC2400F10C87 /* CatorWrapper.swift */,
+				48CAD75B21C6FC0A00F10C87 /* Extensions */,
+				F4CAEEA121C74575009E677B /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		48CAD75B21C6FC0A00F10C87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48CAD74E21C6F8D300F10C87 /* String+Additions.swift */,
+				48CAD75721C6FB6800F10C87 /* Dictionary+QueryParams.swift */,
+				E910122622A85711006689DB /* FileManager+Support.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		820F18AC7BD141AF65B31B46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13721E34163ECCA284540AD9 /* Pods-Cator.debug.xcconfig */,
+				FA52A5199D54ACE25D0B241A /* Pods-Cator.release.xcconfig */,
+				237B58B97F565FE61DD085CA /* Pods-Provider.debug.xcconfig */,
+				2388ABEA6131503526EA7CAA /* Pods-Provider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E910122222A83597006689DB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				E910122322A835A8006689DB /* DirectoryIDCache.swift */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		E98E8E8D22ADFDBC0054BDB5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E98E8E9122AE00450054BDB5 /* CatorUtility.m */,
+				E98E8E9322AE005F0054BDB5 /* CatorUtility.h */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E9BB88E322A5AAEC00A8E416 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9BB890F22A6150C00A8E416 /* CyptomatorBridge */ = {
+			isa = PBXGroup;
+			children = (
+				E9BB890C22A6146F00A8E416 /* CatorClient.swift */,
+				E9BB891022A6153100A8E416 /* Cator-Bridging-Header.h */,
+			);
+			name = CyptomatorBridge;
+			sourceTree = "<group>";
+		};
+		E9C1283022AEC94600DA07A3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E9C1283122AEC95E00DA07A3 /* CatorError.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		F4A2133321E6C63500275D02 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F4A2133421E6C66500275D02 /* Cator.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F4CAEEA121C74575009E677B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4CAEEA221C7458A009E677B /* FileInfo.swift */,
+				E9BB891122A6DA1F00A8E416 /* CiphertextFileType.swift */,
+				E9BB891422A80D0500A8E416 /* FileProviderEnumeratorUpdator.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		482985FD21C6BFCA0058F246 /* Cator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4829861021C6BFCB0058F246 /* Build configuration list for PBXNativeTarget "Cator" */;
+			buildPhases = (
+				B82790A54A0648D845D99CA9 /* [CP] Check Pods Manifest.lock */,
+				482985FA21C6BFCA0058F246 /* Sources */,
+				482985FB21C6BFCA0058F246 /* Frameworks */,
+				482985FC21C6BFCA0058F246 /* Resources */,
+				48CAD74C21C6C14900F10C87 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48CAD74721C6C14900F10C87 /* PBXTargetDependency */,
+			);
+			name = Cator;
+			productName = Favart;
+			productReference = 482985FE21C6BFCA0058F246 /* Cator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48CAD73B21C6C14900F10C87 /* Provider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48CAD74921C6C14900F10C87 /* Build configuration list for PBXNativeTarget "Provider" */;
+			buildPhases = (
+				4A3E39FAB34F8B80AB20D46B /* [CP] Check Pods Manifest.lock */,
+				48CAD73821C6C14900F10C87 /* Sources */,
+				48CAD73921C6C14900F10C87 /* Frameworks */,
+				48CAD73A21C6C14900F10C87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Provider;
+			productName = Provider;
+			productReference = 48CAD73C21C6C14900F10C87 /* Provider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		482985F621C6BFCA0058F246 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Prem Rajendran";
+				TargetAttributes = {
+					482985FD21C6BFCA0058F246 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					48CAD73B21C6C14900F10C87 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 482985F921C6BFCA0058F246 /* Build configuration list for PBXProject "Cator" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 482985F521C6BFCA0058F246;
+			productRefGroup = 482985FF21C6BFCA0058F246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				482985FD21C6BFCA0058F246 /* Cator */,
+				48CAD73B21C6C14900F10C87 /* Provider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		482985FC21C6BFCA0058F246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4829860C21C6BFCB0058F246 /* LaunchScreen.storyboard in Resources */,
+				F4D3CB6D21CF2EDC001582F2 /* ViewController.xib in Resources */,
+				4829860921C6BFCB0058F246 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CAD73A21C6C14900F10C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A3E39FAB34F8B80AB20D46B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Provider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82790A54A0648D845D99CA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		482985FA21C6BFCA0058F246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4829860421C6BFCA0058F246 /* ViewController.swift in Sources */,
+				E9C1283222AEC95E00DA07A3 /* CatorError.swift in Sources */,
+				4829860221C6BFCA0058F246 /* AppDelegate.swift in Sources */,
+				E9BB891222A6DA1F00A8E416 /* CiphertextFileType.swift in Sources */,
+				48CAD74F21C6F8D300F10C87 /* String+Additions.swift in Sources */,
+				48CAD75D21C6FC2400F10C87 /* CatorWrapper.swift in Sources */,
+				F4CAEEA321C7458A009E677B /* FileInfo.swift in Sources */,
+				E9BB890D22A6146F00A8E416 /* CatorClient.swift in Sources */,
+				E9BB891522A80D0500A8E416 /* FileProviderEnumeratorUpdator.swift in Sources */,
+				E910122722A85711006689DB /* FileManager+Support.swift in Sources */,
+				E98E8E9222AE00450054BDB5 /* CatorUtility.m in Sources */,
+				48CAD75821C6FB6800F10C87 /* Dictionary+QueryParams.swift in Sources */,
+				E910122422A835A8006689DB /* DirectoryIDCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CAD73821C6C14900F10C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C1283322AECA8500DA07A3 /* CatorError.swift in Sources */,
+				E98E8E9422AE01530054BDB5 /* CatorUtility.m in Sources */,
+				E98E8E9522AE01530054BDB5 /* CatorUtility.h in Sources */,
+				E910122822A85765006689DB /* FileManager+Support.swift in Sources */,
+				E910122522A83755006689DB /* DirectoryIDCache.swift in Sources */,
+				E910122122A82762006689DB /* FileProviderEnumeratorUpdator.swift in Sources */,
+				F4D3CB6B21CF07B2001582F2 /* FileProviderExtension+Actions.swift in Sources */,
+				48CAD73F21C6C14900F10C87 /* FileProviderExtension.swift in Sources */,
+				48CAD74121C6C14900F10C87 /* FileProviderItem.swift in Sources */,
+				48CAD75921C6FB6800F10C87 /* Dictionary+QueryParams.swift in Sources */,
+				48CAD75021C6F8D300F10C87 /* String+Additions.swift in Sources */,
+				48CAD74321C6C14900F10C87 /* FileProviderEnumerator.swift in Sources */,
+				F4CAEEA421C7458A009E677B /* FileInfo.swift in Sources */,
+				E9BB891322A6DA1F00A8E416 /* CiphertextFileType.swift in Sources */,
+				48CAD75E21C6FC2400F10C87 /* CatorWrapper.swift in Sources */,
+				E9BB890E22A6146F00A8E416 /* CatorClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48CAD74721C6C14900F10C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48CAD73B21C6C14900F10C87 /* Provider */;
+			targetProxy = 48CAD74621C6C14900F10C87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4829860A21C6BFCB0058F246 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4829860B21C6BFCB0058F246 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4829860E21C6BFCB0058F246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4829860F21C6BFCB0058F246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4829861121C6BFCB0058F246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13721E34163ECCA284540AD9 /* Pods-Cator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZLV5ST9EA;
+				INFOPLIST_FILE = Cator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.prem.sec.catorapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Cator-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4829861221C6BFCB0058F246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA52A5199D54ACE25D0B241A /* Pods-Cator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZLV5ST9EA;
+				INFOPLIST_FILE = Cator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.prem.sec.catorapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Cator-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48CAD74A21C6C14900F10C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237B58B97F565FE61DD085CA /* Pods-Provider.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Provider/Provider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZLV5ST9EA;
+				INFOPLIST_FILE = Provider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.prem.sec.catorapp.CatorProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Cator-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48CAD74B21C6C14900F10C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2388ABEA6131503526EA7CAA /* Pods-Provider.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Provider/Provider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZLV5ST9EA;
+				INFOPLIST_FILE = Provider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.prem.sec.catorapp.CatorProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Cator-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		482985F921C6BFCA0058F246 /* Build configuration list for PBXProject "Cator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4829860E21C6BFCB0058F246 /* Debug */,
+				4829860F21C6BFCB0058F246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4829861021C6BFCB0058F246 /* Build configuration list for PBXNativeTarget "Cator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4829861121C6BFCB0058F246 /* Debug */,
+				4829861221C6BFCB0058F246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CAD74921C6C14900F10C87 /* Build configuration list for PBXNativeTarget "Provider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CAD74A21C6C14900F10C87 /* Debug */,
+				48CAD74B21C6C14900F10C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 482985F621C6BFCA0058F246 /* Project object */;
+}

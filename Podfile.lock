@@ -1,0 +1,46 @@
+PODS:
+  - Base32 (1.1.2)
+  - FilesProvider (0.26.0)
+  - KZPropertyMapper (2.9)
+  - OpenSSL-Universal (1.0.2.17)
+  - SETOCryptomatorCryptor (1.4.3):
+    - Base32 (~> 1.1.0)
+    - KZPropertyMapper (~> 2.9.0)
+    - OpenSSL-Universal (~> 1.0.0)
+    - SETOCryptomatorCryptor/e_aeswrap (= 1.4.3)
+    - SETOCryptomatorCryptor/scrypt (= 1.4.3)
+  - SETOCryptomatorCryptor/e_aeswrap (1.4.3):
+    - Base32 (~> 1.1.0)
+    - KZPropertyMapper (~> 2.9.0)
+    - OpenSSL-Universal (~> 1.0.0)
+  - SETOCryptomatorCryptor/scrypt (1.4.3):
+    - Base32 (~> 1.1.0)
+    - KZPropertyMapper (~> 2.9.0)
+    - OpenSSL-Universal (~> 1.0.0)
+  - UICKeyChainStore (2.1.2)
+
+DEPENDENCIES:
+  - FilesProvider
+  - SETOCryptomatorCryptor (~> 1.4.0)
+  - UICKeyChainStore
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Base32
+    - FilesProvider
+    - KZPropertyMapper
+    - OpenSSL-Universal
+    - SETOCryptomatorCryptor
+    - UICKeyChainStore
+
+SPEC CHECKSUMS:
+  Base32: 163c298644d184e89ca4e00a996bad6bf5166390
+  FilesProvider: 2a8ae17d8b9c23a6feadb1308ee638fa31d21065
+  KZPropertyMapper: 26e5a63c47cf4c7b1a1c2bdc853a9406200f8868
+  OpenSSL-Universal: ff04c2e6befc3f1247ae039e60c93f76345b3b5a
+  SETOCryptomatorCryptor: e6b73a639444ba2807de30969a5c1b7a91e39697
+  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+
+PODFILE CHECKSUM: 3da41847d51fd7b79d9c8cca8841a3c0fa1e256e
+
+COCOAPODS: 1.5.3
